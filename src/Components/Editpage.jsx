@@ -14,7 +14,7 @@ const Editpost = () => {
 
     useEffect(() => {
         async function fetchPost() {
-            const response = await fetch(`https://backend-2-uerp.onrender.com/post/${id}`);
+            const response = await fetch(`https://blog-backend-8di5.onrender.com/post/${id}`);
             const post = await response.json();
             setTitle(post.title);
             setSummary(post.summary);
@@ -32,7 +32,7 @@ const Editpost = () => {
         if (files) {
             data.append("file", files[0]);
         }
-        const response = await fetch(`https://backend-2-uerp.onrender.com/post/${id}`, {
+        const response = await fetch(`https://blog-backend-8di5.onrender.com/post/${id}`, {
             method: 'PUT',
             body: data,
             credentials: 'include',

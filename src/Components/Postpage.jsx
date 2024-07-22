@@ -14,7 +14,7 @@ const Postpage = () => {
 
 
     useEffect(() => {
-        fetch(`https://backend-2-uerp.onrender.com/post/${id}`)
+        fetch(`https://blog-backend-8di5.onrender.com/post/${id}`)
             .then(response => response.json())
             .then(data => {
                 console.log("Fetched post info:", data); //  
@@ -26,7 +26,7 @@ const Postpage = () => {
     }, [id]);
 
     if (!postInfo) return 'Loading...';
-    const imageUrl = `https://backend-2-uerp.onrender.com${postInfo.image}`;
+    const imageUrl = `https://blog-backend-8di5.onrender.com${postInfo.image}`;
     const formattedDate = format(new Date(postInfo.createdAt), 'MMMM d, yyyy');
     return (
         <div>

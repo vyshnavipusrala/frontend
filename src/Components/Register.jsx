@@ -9,7 +9,7 @@ const Register = () => {
     async function register(e) {
         e.preventDefault();
          
-        const response=await fetch('https://backend-2-uerp.onrender.com/register',{
+        const response=await fetch('https://blog-backend-8di5.onrender.com/register',{
                 method:'POST',
                 body:JSON.stringify({Username,Password}),
                 headers:{'Content-Type':'application/json'},

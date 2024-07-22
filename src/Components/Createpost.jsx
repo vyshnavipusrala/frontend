@@ -22,7 +22,7 @@ const Createpost = () => {
         if (files) {
             data.append("file", files[0]);
         }
-        const response = await fetch('https://backend-2-uerp.onrender.com/post', {
+        const response = await fetch('https://blog-backend-8di5.onrender.com/post', {
             method: 'POST',
             body: data,
             credentials: 'include',

@@ -11,7 +11,7 @@ const Index = () => {
     }, []);
 
     const fetchPosts = async (search = "") => {
-        const response = await fetch(`https://backend-2-uerp.onrender.com/post?search=${search}`);
+        const response = await fetch(`https://blog-backend-8di5.onrender.com/post?search=${search}`);
         const posts = await response.json();
         setPosts(posts);
     };

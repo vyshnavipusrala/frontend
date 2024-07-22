@@ -6,7 +6,7 @@ const Navbar = () => {
   const { userInfo, setUserInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch('https://backend-2-uerp.onrender.com/profile', {
+    fetch('https://blog-backend-8di5.onrender.com/profile', {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [setUserInfo]);
 
   function logout() {
-    fetch('https://backend-2-uerp.onrender.com/logout', {
+    fetch('https://blog-backend-8di5.onrender.com/logout', {
       credentials: 'include',
       method: 'POST',
     });

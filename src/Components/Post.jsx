@@ -12,7 +12,7 @@ const Post = ({ _id, title, summary, image, content, createdAt, author }) => {
                     <div className="col-md-4 h-100">
                         <Link to={`/post/${_id}`}>
                             {image ? (
-                                <img src={`https://backend-2-uerp.onrender.com${image}`} className="img-fluid rounded-start" alt={title} />
+                                <img src={`https://blog-backend-8di5.onrender.com${image}`} className="img-fluid rounded-start" alt={title} />
                             ) : (
                                 <img src="https://tse4.mm.bing.net/th?id=OIP.PYipJ_hSncugM2SwnZitvgHaEK&pid=Api&P=0&h=180" className="img-fluid rounded-start" alt="default" />
                             )}
